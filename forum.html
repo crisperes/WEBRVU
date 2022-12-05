@@ -1,0 +1,321 @@
+<!DOCTYPE html>  
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contetn="IE=edge">
+    <meta name="viewport" content="width=device-width, initiial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" rel="stylesheet">
+    <title>MancaoStudios</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        header{
+            padding:10px 0;
+            background-color: white;
+        }
+
+        body{
+            background-color: #DAE0E6;
+        }
+        .wraper-header,
+        .wraper-main{ 
+            width:100%;
+            padding:0 10px;
+            display: flex;
+            max-width: 1480px;
+            margin: 0 auto;
+        }
+
+        .wraper-main{ justify-content: space-around;}
+
+        .wraper-header img{
+            width:100px;
+        }
+
+        .home-btn{
+            display: flex;
+            justify-content: space-around;
+            width: 20%;
+            padding:10px 0;
+
+        }
+
+        .search{
+            width:45%;
+        }
+        
+        .search input{
+            width:100%;
+            background-color: rgb(245, 245, 245);
+            height:40px;
+            border-radius:5px;
+            border:1px solid rgb(240,240,240);
+            padding-left:10px;
+        }
+
+        .notifications{
+            padding:0 20px;
+            display: flex;
+            justify-content: space-between;
+            width: 15px;
+        }
+
+        .notifications svg{
+            cursor: pointer;
+            font-size: 20px;
+            padding:10px;
+        }
+
+        .notifications svg:hover{
+            background-color: rgb(240,240,240);
+        }
+
+        .posts{
+            width:60%;
+
+        }
+
+        .sidebar{
+            width: 30%;
+        }
+        .comunidades{
+            padding:0 10 20px 10px;
+            background-color: white;
+        }
+
+        .comunidades h2 {
+            color: white;
+            padding-top:50px 0;
+            padding-bottom:10px;
+            padding-left:10px;
+            background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
+        
+        }
+
+        .comunidade-single{
+            display: flex;
+            justify-content: space-around;
+            padding: 8px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .comunidade-single svg{
+            color: rgb(70, 209, 96);
+        }
+
+        .comunidade-single button{
+            background-color: #069;
+            color: white;
+            border-radius:10px;
+            border:0;
+            width:60px;
+            height:20px;
+        }
+
+        .comunidade-single img{
+            vertical-align: middle;
+        }
+
+        .comunidades button.view-all{
+            width: 80%;
+            display: block;
+
+            margin: 10px auto;
+            height: 30px ;
+            background-color: #069;
+            color: white;
+            border: 0;
+            border-radius: 10px;
+           
+        }
+
+        .post-single{
+            margin-bottom: 20px;
+            display: flex;
+            background-color: white;
+            
+
+
+        }
+
+        .post-sidebar{
+            padding:25px 10px;
+            background-color: rgb(245, 245, 245);
+
+        }
+
+        .post-content{
+            margin-bottom:20px;
+        }
+        
+        .post-content h3{
+            margin-top:10px;
+        }
+
+        .post-content p > img{
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            display: inline;
+        }
+        
+        .post-content img{
+            width:100%;
+            display: block;
+        }
+
+        .post-content-text{
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+        <header>
+            <div class="wraper-header">
+                <div  class="logo">
+                    <img src="img/fachada_bg.jpg"/>
+                </div>
+                <div class="home-btn">
+                 <p>
+                    <span>
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                    </span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </p>
+                </div>
+
+                <div  class="search">
+                    <input type="text" placeholder="Busque aqui!" />
+                </div>
+
+            <div class="notifications">
+                <i class="fa-solid fa-comment"></i>
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-bullhorn"></i>
+            </div>
+
+            </div><!--wraper-header-->
+        </header>
+         <br><br/><br/>   
+        <section class="main">
+            <div class="wraper-main">
+                <div class="posts">
+
+                    <div class="post-single">
+                        <div class="post-sidebar">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            <p><b>19k</b></p>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-content-text"></div>
+                            <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1200px-User_icon_2.svg.png"/> <b>r/Caio</b>* Postado por u/ Caio 2 Horas Atras</p>
+                            <h3>RVU-FATEC</h3>
+                            <img src="img/entrada-bg.jpg"/>
+                        </div>
+
+                    </div>
+                    <div class="post-single">
+                        <div class="post-sidebar">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            <p><b>19k</b></p>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-content-text"></div>
+                            <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1200px-User_icon_2.svg.png"/> <b>r/Caio</b>* Postado por u/ Caio 2 Horas Atras</p>
+                            <h3>RVU-FATEC</h3>
+                            <img src="img/entrada-bg.jpg"/>
+                        </div>
+
+                    </div>
+                    <div class="post-single">
+                        <div class="post-sidebar">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            <p><b>19k</b></p>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-content-text"></div>
+                            <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1200px-User_icon_2.svg.png"/> <b>r/Caio</b>* Postado por u/ Caio 2 Horas Atras</p>
+                            <h3>RVU-FATEC</h3>
+                            <img src="img/entrada-bg.jpg"/>
+                        </div>
+
+                    </div>
+                    <div class="post-single">
+                        <div class="post-sidebar">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            <p><b>19k</b></p>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-content-text"></div>
+                            <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1200px-User_icon_2.svg.png"/> <b>r/Caio</b>* Postado por u/ Caio 2 Horas Atras</p>
+                            <h3>RVU-FATEC</h3>
+                            <img src="img/entrada-bg.jpg"/>
+                        </div>
+
+                    </div>
+                    <div class="post-single">
+                        <div class="post-sidebar">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            <p><b>19k</b></p>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-content-text"></div>
+                            <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1200px-User_icon_2.svg.png"/> <b>r/Caio</b>* Postado por u/ Caio 2 Horas Atras</p>
+                            <h3>RVU-FATEC</h3>
+                            <img src="img/entrada-bg.jpg"/>
+                        </div>
+
+                    </div>  
+
+                </div>
+
+                <div class="sidebar">
+                    <div class="comunidades">
+                        <h2>Posts mais comentados</h2>
+                        <div class="comunidade-single">
+                            <p>1<i class="fa-solid fa-chevron-up"></i></p>
+                            <p><img src="img/hero-bg.jpg"/> Bugs: poste aqui os bugs encontrados</p>
+                            <p><button>Comente!</button></p>
+                        </div>   
+                        <div class="comunidade-single">
+                            <p>1<i class="fa-solid fa-chevron-up"></i></p>
+                            <p><img src="img/hero-bg.jpg"/> Bugs: poste aqui os bugs encontrados</p>
+                            <p><button>Comente!</button></p>
+                        </div>
+                        <div class="comunidade-single">
+                            <p>1<i class="fa-solid fa-chevron-up"></i></p>
+                            <p><img src="img/hero-bg.jpg"/> Bugs: poste aqui os bugs encontrados</p>
+                            <p><button>Comente!</button></p>
+                        </div>
+                        <div class="comunidade-single">
+                            <p>1<i class="fa-solid fa-chevron-up"></i></p>
+                            <p><img src="img/hero-bg.jpg"/> Bugs: poste aqui os bugs encontrados</p>
+                            <p><button>Comente!</button></p>
+                        </div>  
+                        <button class="view-all">View All</button>                 
+                    </div>
+                </div>
+            </div>
+
+        </section>
+            
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.js"></script>
+</body>
+
+
+</html>
